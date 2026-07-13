@@ -1,7 +1,2 @@
-﻿namespace Homestead.Core
-{
-    public class GlobalUsing
-    {
+﻿global using Microsoft.EntityFrameworkCore;
 
-    }
-}
