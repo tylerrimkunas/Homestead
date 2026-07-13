@@ -1,3 +1,9 @@
 <Solution>
+  <Project Path="Homestead.Console/Homestead.Console.csproj" />
   <Project Path="Homestead.Core/Homestead.Core.csproj" />
+  <Project Path="Homestead.Desktop/Homestead.Desktop.csproj" />
+  <Project Path="Homestead.Infrastructure/Homestead.Infrastructure.csproj" />
+  <Project Path="Homestead.Tests/Homestead.Tests.csproj" />
+  <Project Path="Homestead.UseCases/Homestead.UseCases.csproj" />
+  <Project Path="Homstead.API/Homstead.API.csproj" />
 </Solution>
