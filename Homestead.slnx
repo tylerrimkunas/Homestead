@@ -1,3 +1,6 @@
 <Solution>
   <Project Path="Homestead.Core/Homestead.Core.csproj" />
+  <Project Path="Homstead.App/Homstead.App.csproj" Id="0a2d3497-98e1-44ef-bec1-f1ebd848fdff" />
+  <Project Path="Homstead.Infrastructure/Homstead.Infrastructure.csproj" Id="519bd741-cdd6-49a4-90b2-b505d7b88d33" />
+  <Project Path="Homstead.Tests/Homstead.Tests.csproj" Id="6de5fb82-aad0-459a-af9e-f1922c97032b" />
 </Solution>
