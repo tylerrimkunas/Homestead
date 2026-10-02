@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.Core.Aggregates.Recipes
+namespace Homestead.Core.Aggregates.RecipeAggregate
 {
     public class RecipeStep
     {
