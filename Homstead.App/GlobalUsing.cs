@@ -1,1 +1,1 @@
-﻿
+﻿global using Homestead.Core.Interfaces;

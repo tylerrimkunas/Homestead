@@ -2,9 +2,9 @@
 
 namespace Homestead.Core.Aggregates.RecipeAggregate
 {
-    public class RecipeIngredient(int recipeId, string ingredient, double amountPerServing, UnitOfMeasure? unitOfMeasure = null)
+    public class RecipeIngredient(string ingredient, double amountPerServing, UnitOfMeasure? unitOfMeasure = null)
     {
-        public int RecipeId { get; set; } = recipeId;
+        public int RecipeId { get; set; }
         public string Ingredient { get; set; } = ingredient;
         public double AmountPerServing { get; set; } = amountPerServing;
         public UnitOfMeasure? UnitOfMeasure { get; set; } = unitOfMeasure;

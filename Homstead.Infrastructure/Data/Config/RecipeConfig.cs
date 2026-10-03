@@ -11,7 +11,14 @@ namespace Homstead.Infrastructure.Data.Config
     {
         public void Configure(EntityTypeBuilder<Recipe> builder)
         {
-            throw new NotImplementedException();
+            builder.HasMany(r => r.Ingredients)
+                .WithOne(i => i.Recipe)
+                .HasForeignKey(i => i.RecipeId)
+                .OnDelete(DeleteBehavior.Cascade);
+            builder.HasMany(e => e.Steps)
+                .WithOne(s => s.Recipe)
+                .HasForeignKey(s => s.RecipeId)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
