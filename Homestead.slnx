@@ -1,6 +1,6 @@
 <Solution>
   <Project Path="Homestead.App/Homestead.App.csproj" />
   <Project Path="Homestead.Core/Homestead.Core.csproj" />
-  <Project Path="Homestead.Tests/Homestead.Tests.csproj" />
+  <Project Path="Homestead.Tests/Homestead.UnitTests.csproj" />
   <Project Path="Homstead.Infrastructure/Homestead.Infrastructure.csproj" Id="519bd741-cdd6-49a4-90b2-b505d7b88d33" />
 </Solution>

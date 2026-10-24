@@ -1,1 +1,1 @@
-﻿global using Homestead.Core.Interfaces;
+﻿global using Homestead.App.Interfaces;

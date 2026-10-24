@@ -1,4 +1,5 @@
 ﻿using Homestead.App.Data;
+using Homestead.App.Interfaces;
 using Homestead.App.Recipes.Dtos;
 
 namespace Homestead.App.Recipes.GetById

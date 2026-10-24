@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.Core.Interfaces
+namespace Homestead.App.Interfaces
 {
     public interface IQueryHandler<TQuery, TResult> where TQuery : class
     {
