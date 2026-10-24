@@ -1,7 +1,7 @@
-﻿using Homstead.App.Data;
-using Homstead.App.Recipes.Dtos;
+﻿using Homestead.App.Data;
+using Homestead.App.Recipes.Dtos;
 
-namespace Homstead.App.Recipes.GetById
+namespace Homestead.App.Recipes.GetById
 {
     public class GetRecipeByIdHandler(HomesteadContextBase context) : IQueryHandler<GetRecipeByIdQuery, RecipeDto?>
     {

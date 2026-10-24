@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <ProjectReference Include="..\Homestead.Core\Homestead.Core.csproj" />
-    <ProjectReference Include="..\Homstead.App\Homstead.App.csproj" />
+    <ProjectReference Include="..\Homestead.Core\Homestead.Core.csproj" />
+    <ProjectReference Include="..\Homestead.App\Homestead.App.csproj" />
   </ItemGroup>
 
   <ItemGroup>

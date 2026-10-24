@@ -1,7 +1,7 @@
 ﻿using Homestead.Core.Aggregates.RecipeAggregate;
 using Microsoft.EntityFrameworkCore;
 
-namespace Homstead.App.Data
+namespace Homestead.App.Data
 {
     public abstract class HomesteadContextBase(DbContextOptions<HomesteadContextBase> options) : DbContext(options)
     {
