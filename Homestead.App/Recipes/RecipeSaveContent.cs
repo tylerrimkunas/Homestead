@@ -7,7 +7,6 @@ namespace Homestead.App.Recipes
 {
     public abstract record RecipeSaveContent
     {
-        public required string Name { get; set; }
         public int? ServingSize { get; set; }
         public string? Url { get; set; }
         public ICollection<RecipeIngredientDto> Ingredients { get; set; } = [];

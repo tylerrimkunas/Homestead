@@ -33,7 +33,7 @@
             this.Ingredients = [];
             this.Steps = [];
         }
-        public void Update(string? name, int? defaultServingSize, ICollection<RecipeIngredient>? ingredients, ICollection<RecipeStep>? steps)
+        public void Update(string? name, int? defaultServingSize, ICollection<RecipeIngredient> ingredients, ICollection<RecipeStep> steps)
         {
             Update(name);
             if(defaultServingSize.HasValue) this.DefaultServingSize = defaultServingSize.Value;
