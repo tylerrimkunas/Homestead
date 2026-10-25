@@ -15,7 +15,7 @@
             this.Url = url;
         }
         public int Id { get; set; }
-        public string? Name { get; set; }
+        public string Name { get; set; }
         public int? DefaultServingSize { get; set; }
         public string? Url { get; set; }
         public ICollection<RecipeIngredient> Ingredients { get; set; } = [];
