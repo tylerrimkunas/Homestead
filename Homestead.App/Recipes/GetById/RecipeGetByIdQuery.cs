@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Homestead.App.Recipes.GetById
 {
-    public class GetRecipeByIdQuery
+    public class RecipeGetByIdQuery
     {
         public int Id { get; set; }
     }
