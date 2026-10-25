@@ -1,4 +1,4 @@
-﻿namespace Homestead.UnitTests
+﻿namespace Homestead.UnitTests.Core.RecipeAggregate
 {
     public class UnitTest1
     {
