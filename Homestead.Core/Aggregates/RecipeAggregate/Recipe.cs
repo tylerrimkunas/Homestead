@@ -20,5 +20,27 @@
         public string? Url { get; set; }
         public ICollection<RecipeIngredient> Ingredients { get; set; } = [];
         public ICollection<RecipeStep> Steps { get; set; } = [];
+        protected void Update(string? name)
+        {
+            if (!string.IsNullOrWhiteSpace(name)) this.Name = name;
+        }
+        public void Update(string? name, string url) 
+        {
+            Update(name);
+            this.Url = url;
+
+            this.DefaultServingSize = null;
+            this.Ingredients = [];
+            this.Steps = [];
+        }
+        public void Update(string? name, int? defaultServingSize, ICollection<RecipeIngredient>? ingredients, ICollection<RecipeStep>? steps)
+        {
+            Update(name);
+            if(defaultServingSize.HasValue) this.DefaultServingSize = defaultServingSize.Value;
+            if(ingredients != null) this.Ingredients = ingredients;
+            if (steps != null) this.Steps = steps;
+
+            this.Url = null;
+        }
     }
 }
