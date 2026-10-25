@@ -12,15 +12,14 @@ namespace Homestead.App.Recipes.GetById
                 .Include(x => x.Ingredients)
                 .Include(x => x.Steps)
                 .FirstOrDefaultAsync(x => x.Id == query.Id);
-            if (recipe == null)
-            {
-                return null;
-            }
-            return new RecipeDto
+            return recipe == null ? null : new RecipeDto
             {
                 Id = recipe.Id,
                 Name = recipe.Name,
-                ServingSize = recipe.DefaultServingSize
+                ServingSize = recipe.DefaultServingSize,
+                Url = recipe.Url,
+                Ingredients = [.. recipe.Ingredients.Select(i => new RecipeIngredientDto(i.Ingredient, i.AmountPerServing, i.UnitOfMeasure?.ToString()))],
+                Steps = [.. recipe.Steps.Select(s => new RecipeStepDto(s.Order, s.Directions))]
             };
         }
     }
