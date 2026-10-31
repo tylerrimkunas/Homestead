@@ -1,8 +1,10 @@
 <Solution>
+  <Folder Name="/Tests/">
+    <Project Path="Homestead.FunctionalTests/Homestead.FunctionalTests.csproj" Id="86f73dc5-031c-4f44-b611-103d4ee8f234" />
+    <Project Path="Homestead.IntegrationTests/Homestead.IntegrationTests.csproj" Id="a84087ae-ca37-417a-b89a-52bf6726f6e6" />
+    <Project Path="Homestead.Tests/Homestead.UnitTests.csproj" />
+  </Folder>
   <Project Path="Homestead.App/Homestead.App.csproj" />
   <Project Path="Homestead.Core/Homestead.Core.csproj" />
-  <Project Path="Homestead.FunctionalTests/Homestead.FunctionalTests.csproj" Id="86f73dc5-031c-4f44-b611-103d4ee8f234" />
-  <Project Path="Homestead.IntegrationTests/Homestead.IntegrationTests.csproj" Id="a84087ae-ca37-417a-b89a-52bf6726f6e6" />
-  <Project Path="Homestead.Tests/Homestead.UnitTests.csproj" />
   <Project Path="Homstead.Infrastructure/Homestead.Infrastructure.csproj" Id="519bd741-cdd6-49a4-90b2-b505d7b88d33" />
 </Solution>
