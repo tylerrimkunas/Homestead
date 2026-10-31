@@ -30,8 +30,8 @@
             this.Url = url;
 
             this.DefaultServingSize = null;
-            this.Ingredients = [];
-            this.Steps = [];
+            this.Ingredients.Clear();
+            this.Steps.Clear();
         }
         public void Update(string? name, int? defaultServingSize, ICollection<RecipeIngredient> ingredients, ICollection<RecipeStep> steps)
         {
