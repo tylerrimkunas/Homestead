@@ -28,6 +28,8 @@ namespace Homestead.App.UseCases.Recipes.List
         public int Length { get; set; } = 10;
         public ICollection<RecipeFilterNode> Filters { get; set; } = [];
         public ICollection<RecipeSortNode> Sorts { get; set; } = [];
+        public string GlobalFilter { get; set; } = string.Empty;
+        public bool IsGlobalFilterRegex { get; set; } = false;
     }
     public record RecipeFilterNode(string Property, FilterType Type, object Value, object? Value2 = null);
     public record RecipeSortNode(string Property, SortDirection Direction);

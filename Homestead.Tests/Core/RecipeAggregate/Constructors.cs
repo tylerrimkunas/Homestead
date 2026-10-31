@@ -1,6 +1,6 @@
 ﻿namespace Homestead.UnitTests.Core.RecipeAggregate
 {
-    public class UnitTest1
+    public class Constructors
     {
         [Fact]
         public void Test1()
