@@ -1,9 +1,9 @@
-﻿using Homestead.App.Recipes.Dtos;
+﻿using Homestead.App.UseCases.Recipes.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.App.Recipes
+namespace Homestead.App.UseCases.Recipes
 {
     public abstract record RecipeSaveContent
     {

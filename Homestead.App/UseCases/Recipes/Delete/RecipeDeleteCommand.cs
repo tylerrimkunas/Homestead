@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.App.Recipes.Delete
+namespace Homestead.App.UseCases.Recipes.Delete
 {
     public record RecipeDeleteCommand(int Id);
 }

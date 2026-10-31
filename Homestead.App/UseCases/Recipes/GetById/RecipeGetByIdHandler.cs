@@ -1,16 +1,23 @@
 ﻿using Homestead.App.Data;
-using Homestead.App.Recipes.Dtos;
+using Homestead.App.UseCases.Recipes.Dtos;
 using Microsoft.EntityFrameworkCore;
 
-namespace Homestead.App.Recipes.GetById
+namespace Homestead.App.UseCases.Recipes.GetById
 {
     public class RecipeGetByIdHandler(HomesteadContextBase context) : IQueryAsyncHandler<RecipeGetByIdQuery, RecipeDto?>
     {
         async Task<RecipeDto?> IQueryAsyncHandler<RecipeGetByIdQuery, RecipeDto?>.Query(RecipeGetByIdQuery query)
         {
             var recipe = await context.Recipes
-                .Include(x => x.Ingredients)
-                .Include(x => x.Steps)
+                .Select(x => new
+                {
+                    x.Id,
+                    x.Name,
+                    x.DefaultServingSize,
+                    x.Url,
+                    Ingredients = x.Ingredients.Select(i => new { i.Ingredient, i.AmountPerServing, i.UnitOfMeasure }),
+                    Steps = x.Steps.Select(s => new { s.Order, s.Directions })
+                })
                 .FirstOrDefaultAsync(x => x.Id == query.Id);
             return recipe == null ? null : new RecipeDto
             {

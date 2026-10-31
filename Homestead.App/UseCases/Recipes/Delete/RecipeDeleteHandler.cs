@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.App.Recipes.Delete
+namespace Homestead.App.UseCases.Recipes.Delete
 {
     public class RecipeDeleteHandler(HomesteadContextBase context) : ICommandAsyncHandler<RecipeDeleteCommand>
     {

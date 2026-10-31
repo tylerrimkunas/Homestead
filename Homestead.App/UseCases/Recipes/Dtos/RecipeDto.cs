@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.App.Recipes.Dtos
+namespace Homestead.App.UseCases.Recipes.Dtos
 {
     public record RecipeDto
     {

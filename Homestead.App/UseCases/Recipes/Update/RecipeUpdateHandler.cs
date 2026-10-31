@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.App.Recipes.Update
+namespace Homestead.App.UseCases.Recipes.Update
 {
     public class RecipeUpdateHandler(HomesteadContextBase context) : ICommandAsyncHandler<RecipeUpdateCommand>
     {
