@@ -1,0 +1,6 @@
+@Homestead.API_HostAddress = http://localhost:5097
+
+GET {{Homestead.API_HostAddress}}/Recipes/
+Accept: application/json
+
+###
