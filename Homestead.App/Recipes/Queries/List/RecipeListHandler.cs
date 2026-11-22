@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.App.UseCases.Recipes.List
+namespace Homestead.App.Recipes.Queries.List
 {
     public class RecipeListHandler(HomesteadContextBase context) : IQueryAsyncHandler<RecipeListQuery, ListResult<RecipeSummaryDto>>
     {

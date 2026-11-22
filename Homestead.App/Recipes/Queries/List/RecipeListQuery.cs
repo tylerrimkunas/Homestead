@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
-namespace Homestead.App.UseCases.Recipes.List
+namespace Homestead.App.Recipes.Queries.List
 {
     public enum FilterType
     {

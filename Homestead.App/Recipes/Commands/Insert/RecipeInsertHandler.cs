@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.App.Recipes.Insert
+namespace Homestead.App.Recipes.Commands.Insert
 {
     internal class RecipeInsertHandler(HomesteadContextBase context) : ICommandAsyncHandler<RecipeInsertCommand, int>
     {

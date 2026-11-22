@@ -2,7 +2,7 @@
 using Homestead.App.Recipes.Dtos;
 using Microsoft.EntityFrameworkCore;
 
-namespace Homestead.App.Recipes.GetById
+namespace Homestead.App.Recipes.Queries.GetById
 {
     public class RecipeGetByIdHandler(HomesteadContextBase context) : IQueryAsyncHandler<RecipeGetByIdQuery, RecipeDto?>
     {
