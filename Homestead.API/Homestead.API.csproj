@@ -12,10 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Recipes\Requests\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Homestead.App\Homestead.App.csproj" />
   </ItemGroup>
 
