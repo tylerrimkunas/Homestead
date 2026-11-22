@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.UnitTests.Application.UseCases.Recipes
+namespace Homestead.UnitTests.Application.Recipes
 {
-    internal class GetById
+    internal class Delete
     {
     }
 }
