@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Homestead.App.Interfaces;
+using Homestead.App.Recipes.Dtos;
+using Homestead.App.Recipes.Queries.GetById;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Homestead.API.Recipes
+namespace Homestead.API.Recipes.Endpoints
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class RecipesController : ControllerBase
+    public class RecipesController(IQueryAsyncHandler<RecipeGetByIdQuery, RecipeDto?> getByIdhandler) : ControllerBase
     {
         // GET: api/<RecipesController>
         [HttpGet]
@@ -17,9 +20,15 @@ namespace Homestead.API.Recipes
 
         // GET api/<RecipesController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<RecipeDto?>> Get(int id)
         {
-            return "value";
+            var query = new RecipeGetByIdQuery(id);
+            var recipe = await getByIdhandler.Query(query);
+            if (recipe == null)
+            {
+                return NotFound();
+            }
+            return Ok(recipe);
         }
 
         // POST api/<RecipesController>
