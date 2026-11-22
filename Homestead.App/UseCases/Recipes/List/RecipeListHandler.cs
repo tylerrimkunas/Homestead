@@ -1,5 +1,5 @@
 ﻿using Homestead.App.UseCases.Recipes.Dtos;
-using Homestead.Core.Aggregates.RecipeAggregate;
+using Homestead.Core.Recipes;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

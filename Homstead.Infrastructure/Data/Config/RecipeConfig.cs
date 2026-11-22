@@ -1,4 +1,4 @@
-﻿using Homestead.Core.Aggregates.RecipeAggregate;
+﻿using Homestead.Core.Recipes;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;

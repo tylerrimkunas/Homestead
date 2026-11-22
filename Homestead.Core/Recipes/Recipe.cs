@@ -1,4 +1,4 @@
-﻿namespace Homestead.Core.Aggregates.RecipeAggregate
+﻿namespace Homestead.Core.Recipes
 {
     public class Recipe
     {

@@ -1,4 +1,4 @@
-﻿using Homestead.Core.Aggregates.RecipeAggregate;
+﻿using Homestead.Core.Recipes;
 using Microsoft.EntityFrameworkCore;
 
 namespace Homestead.App.Data

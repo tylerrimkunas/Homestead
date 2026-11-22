@@ -1,6 +1,7 @@
 ﻿using Homestead.App.Data;
 using Homestead.Core.Aggregates.RecipeAggregate;
 using Homestead.Core.Enums;
+using Homestead.Core.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Text;

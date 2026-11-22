@@ -1,6 +1,6 @@
 ﻿using Homestead.Core.Enums;
 
-namespace Homestead.Core.Aggregates.RecipeAggregate
+namespace Homestead.Core.Recipes
 {
     public class RecipeIngredient(string ingredient, double amountPerServing, UnitOfMeasure? unitOfMeasure = null)
     {
