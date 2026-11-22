@@ -4,8 +4,5 @@ using System.Text;
 
 namespace Homestead.App.Recipes.Commands.Insert
 {
-    public record RecipeInsertCommand : RecipeSaveContent
-    {
-        public required string Name { get; set; }
-    }
+    public record RecipeInsertCommand : RecipeSaveContent;
 }
