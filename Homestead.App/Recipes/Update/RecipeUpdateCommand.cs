@@ -1,9 +1,9 @@
-﻿using Homestead.App.UseCases.Recipes;
+﻿using Homestead.App.Recipes;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.App.UseCases.Recipes.Update
+namespace Homestead.App.Recipes.Update
 {
     public record RecipeUpdateCommand : RecipeSaveContent
     {

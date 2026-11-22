@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homestead.App.UseCases.Recipes.GetById
+namespace Homestead.App.Recipes.GetById
 {
     public class RecipeGetByIdQuery
     {

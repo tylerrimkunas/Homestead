@@ -1,8 +1,8 @@
 ﻿using Homestead.App.Data;
-using Homestead.App.UseCases.Recipes.Dtos;
+using Homestead.App.Recipes.Dtos;
 using Microsoft.EntityFrameworkCore;
 
-namespace Homestead.App.UseCases.Recipes.GetById
+namespace Homestead.App.Recipes.GetById
 {
     public class RecipeGetByIdHandler(HomesteadContextBase context) : IQueryAsyncHandler<RecipeGetByIdQuery, RecipeDto?>
     {
