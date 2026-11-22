@@ -12,10 +12,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Homestead.Core\Homestead.Core.csproj" />
+    <ProjectReference Include="..\Homestead.App\Homestead.App.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="UseCases\Recipes\GetById\" />
+    <Folder Include="Data\Config\" />
   </ItemGroup>
 
 </Project>

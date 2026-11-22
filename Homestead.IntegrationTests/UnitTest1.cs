@@ -1,4 +1,4 @@
-﻿namespace Homstead.Tests
+﻿namespace Homestead.IntegrationTests
 {
     public class UnitTest1
     {

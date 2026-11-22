@@ -11,11 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Homstead.App\Homstead.App.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Data\Config\" />
+    <ProjectReference Include="..\Homestead.Core\Homestead.Core.csproj" />
   </ItemGroup>
 
 </Project>
