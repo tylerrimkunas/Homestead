@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Homstead.Infrastructure.Data.Config
+namespace Homestead.Infrastructure.Data.Config.Recipes
 {
     internal class RecipeConfig : IEntityTypeConfiguration<Recipe>
     {
